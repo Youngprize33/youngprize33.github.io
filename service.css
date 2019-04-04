@@ -1,0 +1,130 @@
+@keyframes rolling{
+    0%{transform: translateY(0);
+}
+    25%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(-40%);
+    }
+    75%{
+        transform: translateY(-60%);
+    }
+    100%{
+        transform: translateY(-80%);
+    }
+}
+/* css reset */
+body,ul,h1,h2,h3,dl,dd,p {
+    margin: 0; padding: 0;
+    
+}
+/* 주석달기는 ctrl+/ */
+/* 한번씩 check 하면서 기록하는게 좋겠다. */
+li {
+    list-style-type: none;
+    
+}
+/* ctrl+tab 은 탭 선택가능 */
+/* 유튜브에 beencamp */
+/*css*/
+
+body {
+    background-color:#111;
+    color: #999;
+}
+
+.portrait{ 
+    background-image:
+    url(images/vote.jpg);
+    padding-top: 56.25%;
+    background-position: center;
+    background-size: cover;
+}
+@media(min-width:760px) {
+    .portrait{
+        padding: 0;
+        width: 60vw;
+        height: 100vh;
+        position: fixed;
+        margin-left: 40vw
+
+    }
+    .profile {
+            margin-right: 60vw;
+    }
+
+}
+
+.profile {
+    padding: 6%;
+
+}
+
+.name-job{
+    display: inline-block;
+    color: wheat;
+    vertical-align: top;
+    height: 1.5em;
+    position: relative;
+    overflow: hidden;
+}
+.name-job-list {
+    animation-name: rolling;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.title{
+    font-size: 30px;
+
+}
+.service-title{
+    color: deeppink;
+}
+.service-section {
+    padding-bottom: 14%;
+}
+.service-section h2{
+        border-top: 3px solid;
+        color: orangered;
+        margin-bottom: 20px;
+        font-size: 2rem;   
+}
+.timeline {
+    font-size: 1rem;
+}
+.timeline h3 {
+    color: orange;
+}
+.timeline li {
+    padding-bottom: 30px;
+}
+.timeline li:last-child {
+    padding-bottom: 0;
+}
+
+.service-process {  
+    font-size: 1rem;
+}
+.service-process h3{
+    color: lightgoldenrodyellow;
+}
+.service-process li{
+    padding-bottom: 30px;
+}
+
+.process-check{
+    font-size: 1rem;
+    color: lightsalmon;
+}
+
+.service-effect {
+    font-size: 1rem;
+}
+.service-effect h3{
+    color: skyblue;
+}
+.service-effect li{
+    padding-bottom: 30px;
+}

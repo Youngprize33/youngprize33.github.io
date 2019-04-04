@@ -1,0 +1,126 @@
+@keyframes rolling{
+    0%{transform: translateY(0);
+}
+    25%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(-40%);
+    }
+    75%{
+        transform: translateY(-60%);
+    }
+    100%{
+        transform: translateY(-80%);
+    }
+}
+/* css reset */
+body,ul,h1,h2,h3,dl,dd,p {
+    margin: 0; padding: 0;
+    
+}
+/* 주석달기는 ctrl+/ */
+/* 한번씩 check 하면서 기록하는게 좋겠다. */
+li {
+    list-style-type: none;
+    
+}
+/* ctrl+tab 은 탭 선택가능 */
+/* 유튜브에 beencamp */
+/*css*/
+
+body {
+    background-color:#111;
+    color: lightsteelblue;
+}
+
+.portrait{ 
+    background-image:
+    url(images/profile1.jpg);
+    padding-top: 56.25%;
+    background-position: center;
+    background-size: cover;
+}
+@media(min-width:760px) {
+    .portrait{
+        padding: 0;
+        width: 60vw;
+        height: 100vh;
+        position: fixed;
+
+    }
+    .profile {
+            margin-left: 60vw;
+    }
+
+}
+
+.profile {
+    padding: 5%;
+}
+
+.introduction{
+    color: lightsalmon
+}
+
+.list li{
+    background-image:
+    url(images/icons.png);
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+.list #twitter {
+    background-position: left top;
+}
+
+.list #facebook {
+    background-position: center top;
+}
+
+.list #pinterest {
+    background-position: right top;
+}
+
+.list li:hover {
+    background-position-y: bottom !important;
+}
+/* hover 은 마우스를 올렸을 떄 나타나는 태그  */
+
+.name-job{
+    display: inline-block;
+    color: wheat;
+    vertical-align: top;
+    height: 1.5em;
+    position: relative;
+    overflow: hidden;}
+
+.name-job::after {
+    content: '!';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: -1em;  
+    box-shadow: inset 0 0 10px 10px #111
+}
+
+.name-job-list {
+    animation-name: rolling;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    margin-right: 0.6em;
+}
+.title{
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.name-title{
+    color:deepskyblue
+}
